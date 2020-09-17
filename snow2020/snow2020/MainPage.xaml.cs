@@ -45,5 +45,20 @@ namespace snow2020
             seredina.BackgroundColor = Color.FromHex("#F9F9F9");
             vniz.BackgroundColor = Color.FromHex("#F9F9F9");
         }
+
+        private void down_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void show_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void poka_Clicked(object sender, EventArgs e)
+        {
+
+        }
     }
 }

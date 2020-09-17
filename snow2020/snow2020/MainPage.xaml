@@ -55,8 +55,20 @@
         <Button x:Name="down"
                 Text="Пропадай!"
                 HorizontalOptions="CenterAndExpand"
-                VerticalOptions="End">
-            
+                VerticalOptions="End"
+                Clicked="down_Clicked">
+        </Button>
+        <Button x:Name="show"
+                Text="Появись!"
+                HorizontalOptions="Center"  
+                VerticalOptions="StartAndExpand"
+                Clicked="show_Clicked">
+        </Button>
+        <Button x:Name="poka"
+                Text="Если нажмёшь - умрёт"
+                HorizontalOptions="Start"   
+                VerticalOptions="Center"
+                Clicked="poka_Clicked">
         </Button>
     </StackLayout>
 </ContentPage>

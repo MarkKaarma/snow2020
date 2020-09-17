@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="snow2020.Snow2_0">
+    <AbsoluteLayout>
+        <!--Шляпа, голова, туловище и нижняя часть снеговика-->
+        <BoxView AbsoluteLayout.LayoutBounds="140, 48, 90, 50" BackgroundColor="DarkBlue" >
+        </BoxView>
+        <Frame  CornerRadius="250" AbsoluteLayout.LayoutBounds="100, 100, 170, 180" Padding="90" VerticalOptions = "Center"  BackgroundColor="White" HasShadow="True" >
+        </Frame>
+        <Frame  CornerRadius="250" AbsoluteLayout.LayoutBounds="98, 270, 185, 200" Padding="90" VerticalOptions = "Center"  BackgroundColor="White" HasShadow="True" >
+        </Frame>
+        <Frame  CornerRadius="250" AbsoluteLayout.LayoutBounds="90, 440, 200, 220" Padding="88" VerticalOptions = "Center"  BackgroundColor="White" HasShadow="True" >
+        </Frame>
+        <!--Глаза, рот и нос-->
+        <Frame
+        CornerRadius="250" AbsoluteLayout.LayoutBounds="120, 150, 25, 25" Padding="100" VerticalOptions = "Center"  BackgroundColor="black" HasShadow="True" >
+        </Frame>
+        <Frame
+            CornerRadius="250" AbsoluteLayout.LayoutBounds="220, 150, 25, 25" Padding="100" VerticalOptions = "Center"  BackgroundColor="black" HasShadow="True" >
+        </Frame>
+        <Frame
+            CornerRadius="20" AbsoluteLayout.LayoutBounds="180, 195, 30, 15" Padding="30" VerticalOptions = "Center"  BackgroundColor="Orange" HasShadow="True" >
+        </Frame>
+        <!--Для рук нужен четырёх угольник и rotation-->
+        <!--Кнопки-->
+        <Button x:Name="plak" 
+                   Text="Грусить"
+                   TranslationX="0"
+                   TranslationY="670"
+                   Clicked="plak_Clicked"
+                   >
+        </Button>
+        <Button x:Name="ura" 
+                  Text="Улыбнись"
+                  TranslationX="0"
+                  TranslationY="630"
+                  >
+        </Button>
+    </AbsoluteLayout>
+</ContentPage>
