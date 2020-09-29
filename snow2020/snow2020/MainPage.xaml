@@ -70,5 +70,9 @@
                 VerticalOptions="Center"
                 Clicked="poka_Clicked">
         </Button>
+        <Button x:Name="rabota"
+                Text="Нажми и узнай, что будет там"
+                HorizontalOptions="End"   
+                VerticalOptions="Center"/>
     </StackLayout>
 </ContentPage>

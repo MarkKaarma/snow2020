@@ -10,7 +10,7 @@ namespace snow2020
         {
             InitializeComponent();
 
-            MainPage = new Snow2_0();
+            MainPage = new MainPage();
         }
 
         protected override void OnStart()

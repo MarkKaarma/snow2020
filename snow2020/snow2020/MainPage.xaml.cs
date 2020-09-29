@@ -48,17 +48,23 @@ namespace snow2020
 
         private void down_Clicked(object sender, EventArgs e)
         {
-
-        }
+            golov.Opacity = 0;
+            verh.Opacity = 0;
+            seredina.Opacity = 0;
+            vniz.Opacity = 0;
+        } 
 
         private void show_Clicked(object sender, EventArgs e)
         {
-
+            golov.Opacity = 1;
+            verh.Opacity = 1;
+            seredina.Opacity = 1;
+            vniz.Opacity = 1;
         }
 
         private void poka_Clicked(object sender, EventArgs e)
         {
-
+            Thread.Sleep(500);
         }
     }
 }
