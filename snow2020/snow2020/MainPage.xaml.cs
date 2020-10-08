@@ -18,25 +18,10 @@ namespace snow2020
         Random rnd = new Random();
         private void verhiy_Clicked(object sender, EventArgs e)
         {
-            int c = rnd.Next(1, 4);
-            if (c == 1)
-            {
-                verh.BackgroundColor = Color.FromHex("#347EB8");
-                seredina.BackgroundColor = Color.FromHex("#343CB8");
-                vniz.BackgroundColor = Color.FromHex("#240689");
-            }
-            else if (c == 2)
-            {
-                verh.BackgroundColor = Color.FromHex("#A19FA7");
-                seredina.BackgroundColor = Color.FromHex("#63606D");
-                vniz.BackgroundColor = Color.FromHex("#505052");
-            }
-            else
-            {
-                verh.BackgroundColor = Color.FromHex("#9EBC16");
-                seredina.BackgroundColor = Color.FromHex("#748A10");
-                vniz.BackgroundColor = Color.FromHex("#EAE309");
-            }
+            golov.BackgroundColor = Color.FromRgb(rnd.Next(0, 255), rnd.Next(0, 255), 0);
+            verh.BackgroundColor = Color.FromRgb(rnd.Next(0, 255), rnd.Next(0, 255), 0);
+            seredina.BackgroundColor = Color.FromRgb(rnd.Next(0, 255), rnd.Next(0, 255), 0);
+            vniz.BackgroundColor = Color.FromRgb(rnd.Next(0, 255), rnd.Next(0, 255), 0);
         }
 
         private void cleaning_Clicked(object sender, EventArgs e)
@@ -64,7 +49,7 @@ namespace snow2020
 
         private void poka_Clicked(object sender, EventArgs e)
         {
-            Thread.Sleep(500);
+            // Нужен код, как сделать так, чтобы работало чтобы снеговик "растопился", т.е. одна частичка пропадает через +-2 секунды.
         }
     }
 }
