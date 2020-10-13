@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading;
 using Xamarin.Forms;
 
 namespace snow2020
@@ -37,7 +38,7 @@ namespace snow2020
             verh.Opacity = 0;
             seredina.Opacity = 0;
             vniz.Opacity = 0;
-        } 
+        }
 
         private void show_Clicked(object sender, EventArgs e)
         {
@@ -47,9 +48,31 @@ namespace snow2020
             vniz.Opacity = 1;
         }
 
-        private void poka_Clicked(object sender, EventArgs e)
+        bool poki;
+        private async Task poka_ClickedAsync(object sender, EventArgs e)
         {
-            // Нужен код, как сделать так, чтобы работало чтобы снеговик "растопился", т.е. одна частичка пропадает через +-2 секунды.
+            if (poki == true)
+            {
+                for (int i = 0; i < 1; i++)
+                {
+
+                    verh.Opacity = 0.9;
+                    seredina.Opacity = 0.9;
+                    vniz.Opacity = 0.9;
+                    await Task.Run(() => Thread.Sleep(1000));
+                    verh.Opacity = 0.6;
+                    seredina.Opacity = 0.6;
+                    vniz.Opacity = 0.6;
+                    await Task.Run(() => Thread.Sleep(1000));
+                    verh.Opacity = 0.3;
+                    seredina.Opacity = 0.3;
+                    vniz.Opacity = 0.3;
+                    await Task.Run(() => Thread.Sleep(1000));
+                    verh.Opacity = 0;
+                    seredina.Opacity = 0;
+                    vniz.Opacity = 0;
+                }
+            }
         }
     }
 }
